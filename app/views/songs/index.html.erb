@@ -1,4 +1,6 @@
 <% @songs.each do |song| %>
   <%= song.title %>
+  <br>
+  <%= link_to "View Song Info", song_path(song) %>
   <hr>
 <% end %>
