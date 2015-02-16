@@ -2,6 +2,10 @@
   <%= song.title %>
   <br>
   <%= link_to "View Song Info", song_path(song) %>
+  <br>
+  <%= link_to "Edit Song Info", edit_song_path(song) %>
+  <br>
+  <%= link_to "Delete Song Record", song_path(song), method: "delete" %>
   <hr>
 <% end %>
 <%= link_to "Create New Song Record", new_song_path %>
